@@ -1,0 +1,49 @@
+<main class="flex flex-col w-dvw justify-center items-center h-dvh">
+  <div id="login__header" class="">
+    <h3 class="text-green-800 select-none">Welcome Back</h3>
+    <p class="text-center text-gray-400 select-none">Login to Your Account</p>
+  </div>
+  <div id="login__forms">
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Full Name</mat-label>
+        <input matInput placeholder="Placeholder">
+        <mat-icon matSuffix>person</mat-icon>
+        <!--        <mat-hint>Hint</mat-hint>-->
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Placeholder" type="password">
+        <mat-icon matSuffix>lock</mat-icon>
+        <!--        <mat-hint>Hint</mat-hint>-->
+      </mat-form-field>
+    </div>
+    <button mat-flat-button class="w-[250px] mt-5">Login</button>
+  </div>
+  <div id="login__separator" class="mt-2">
+    <div class="h-[1px] w-[250px] bg-gray-300"></div>
+  </div>
+  <div id="login__bottom" class="flex flex-col justify-center items-center gap-y-3 gap-x-5">
+    <div>
+      <div class="border border-solid border-gray-300 flex mt-2 w-[250px] items-center button
+        gap-8 p-2 rounded-l-full rounded-r-full cursor-pointer" (click)="authService.signInWithGoogle()">
+        <div class="w-[30px] h-[30px] border border-solid border-gray-300 rounded-full"></div>
+        <div class="text-center text-gray-700">Login with Google</div>
+      </div>
+      <div class="border border-solid border-gray-300 flex mt-2 w-[250px] items-center gap-6 p-2
+        rounded-l-full rounded-r-full cursor-pointer" (click)="authService.signInWithFaceBook()">
+        <div class="w-[30px] h-[30px] border border-solid border-gray-300 rounded-full"></div>
+        <div class="text-center text-gray-700">Login with Facebook</div>
+      </div>
+      <div class="border border-solid border-gray-300 flex mt-2 w-[250px] items-center gap-6
+        p-2 rounded-l-full rounded-r-full cursor-pointer" (click)="authService.signInWithInstagram()">
+        <div class="w-[30px] h-[30px] border border-solid border-gray-300 rounded-full"></div>
+        <div class="text-center text-gray-700">Login with Instagram</div>
+      </div>
+    </div>
+    <p class="text-gray-400 p-3">Don't have an account? <a class="text-green-950" href="">Sign up</a></p>
+  </div>
+
+</main>

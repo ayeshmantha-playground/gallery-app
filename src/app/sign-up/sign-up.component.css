@@ -1,0 +1,12 @@
+#icon-fb {
+  /*background-image: url('public/img/fb.png');*/
+
+}
+
+.social-icons {
+  width: 45px;
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
